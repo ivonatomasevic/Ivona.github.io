@@ -1,0 +1,31 @@
+p{
+    background-color:papayawhip;
+    padding-left:100px;
+    padding-top: 20px;
+   
+   border-style: solid double dotted solid;
+    border-width: 10px 20px 5px 2px;
+    margin: 20px 30px 40px 20px;
+    border-radius: 50px; 
+    font-family: fantasy;
+    
+}
+h1{
+    text-align: center;
+    
+}
+span{
+    background-color:blueviolet;
+    padding: 20px;
+    border-style: solid;
+    margin: 10px;
+    display: inline-block;
+
+
+}
+#prvi{
+    margin-left: 50px;
+}
+body{
+    background-color: lightpink;
+}
