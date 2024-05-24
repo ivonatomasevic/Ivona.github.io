@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dvoriste</title>
+    <style>
+        .oblak1, .oblak2, .oblak3, .sunce {
+             height: 20px;
+             width: 30px;
+             position: absolute;
+        }
+        .krosnja1,.krosnja2,.krosnja3,.krosnja4.krosnja5{
+            height: 23px;
+            width: 40px;
+            position: absolute;
+        }
+        .oblak1 {
+            background-color: rgb(36, 108, 139);
+            border-radius: 30%;
+            position: center;
+            bottom: 0;
+            left: 0;
+
+        }
+        .oblak2 {
+            background-color: rgb(36, 108, 139);
+            border-radius: 30%;
+            position: center;
+            bottom: 0;
+            right: 0;
+        }
+        .oblak3 {
+            background-color: rgb(36, 108, 139);
+            border-radius: 30%;
+            position: center;
+            top: 0;
+            left: 10px;
+        }
+        .osnova {
+            background-color: rgb(116, 82, 36);
+            border-radius: 0;
+            position: absolute;
+            right: 50%;
+            left: 50%;
+            top: 204%;
+            width: 60px;
+            height: 120px;
+            background-image: url(./cig.jpg);
+        }
+        .prozor1 {
+            height: 27px;
+            width: 50%;
+            border-radius: 20%;
+            background-color: rgb(186, 150, 150);
+            border-radius: 0;
+            
+            left: 25%;
+            top: 10%;
+            position: relative;
+
+        }
+
+        .prozor1 td {
+            width: 50%;
+            height: 50%;
+            background-color: pink;
+        }
+        .prozor1 td:hover {
+            background-image: url(svetlo.jpg);
+            background-size: cover;
+        }
+
+        .sunce {
+            
+            background-image: radial-gradient(yellow,orange,transparent);
+            border-radius: 50%;
+            top: 0;
+            position: absolute;
+
+        }
+        .oblak{
+            position: relative;
+            
+            width: 50px;
+            height: 30px;
+            z-index: 1;
+        }
+        body {
+            background-image: linear-gradient(rgb(138, 184, 198) 80%,rgb(87, 246, 87));
+            background-repeat: no-repeat;
+            height:100vh ;
+            margin: 0;
+            padding: 0
+        ;
+
+        }
+
+        #prozor2 {
+            top: 20%;
+        }
+
+        #krov {
+            border-color: red;
+            border-width: 20px;
+            position: absolute;
+            border-bottom: solid rgb(92, 75, 75) 20px;
+            border-left: solid transparent 10px;
+            border-right: solid transparent 10px;
+            width: 30%;
+            top: 22.3%;
+            left: 10%;
+            background-image: url(./cigg.jpg);
+            
+        }
+        .krosnja1 {
+            background-color: rgb(10, 64, 8);
+            border-radius: 30%;
+            position: center;
+            bottom: 0;
+            right: 0; 
+        }
+        .krosnja2 {
+            background-color: rgb(10, 64, 8);
+            border-radius: 30%;
+            position: center;
+            bottom: 50%;
+            top: 200%;
+            
+            right: 100;
+            left: 180%;
+
+        }
+        .krosnja3 {
+            background-color: rgb(10, 64, 8);
+            border-radius: 30%;
+            position: center;
+            bottom: 50%;
+            right: 110;
+            top: 240%;
+            left: 230%;
+            
+        }
+        .krosnja4 {
+            background-color: rgb(10, 64, 8);
+            border-radius: 30%;
+            position: center;
+            bottom:60%;
+            right: 105;
+            top: 260%;
+            left: 200%;
+        }
+        .krosnja5 {
+            background-color: rgb(10, 64, 8);
+            border-radius: 30%;
+            position: center;
+            bottom: 50px;
+            right: 107;
+            top: 280%;
+            left: 210%;
+        }
+        .krosnja {
+            position: relative;
+            
+            width: 50px;
+            height: 30px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+   <div id="krov"></div>
+    
+    
+    <div class="oblak">
+        <div class="oblak1"></div>
+        <div class="oblak2"></div>
+        <div class="oblak3"></div>
+        <div class="krosnja1"></div>
+        <div class="krosnja2"></div>
+        <div class="krosnja3"></div>
+        <div class="krosnja4"></div>
+        <div class="krosnja5"></div>
+        <div class="osnova">
+            <table class="prozor1">
+                <tr> <td></td> <td></td> </tr>
+            </table>
+
+            
+            <table class="prozor1" id="prozor2">
+                <tr> <td></td> <td></td> </tr>
+            </table>
+
+            
+            
+        </div>
+    </div>
+    <div class="sunce"></div>
+
+</body>
+</html
